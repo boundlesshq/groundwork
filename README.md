@@ -20,13 +20,13 @@ Each skill works standalone in a fresh session. Running them in sequence in the 
 ### Add the marketplace
 
 ```
-/plugin marketplace add rcopra/claude-skills
+/plugin marketplace add rcopra/groundwork
 ```
 
 ### Install the plugin
 
 ```
-/plugin install groundwork@team-skills
+/plugin install groundwork@rcopra-groundwork
 ```
 
 ### Optional: prompt your team automatically
@@ -36,15 +36,15 @@ Add to your project's `.claude/settings.json` to prompt teammates on first open:
 ```json
 {
   "extraKnownMarketplaces": {
-    "team-skills": {
+    "rcopra-groundwork": {
       "source": {
         "source": "github",
-        "repo": "rcopra/claude-skills"
+        "repo": "rcopra/groundwork"
       }
     }
   },
   "enabledPlugins": {
-    "groundwork@team-skills": true
+    "groundwork@rcopra-groundwork": true
   }
 }
 ```

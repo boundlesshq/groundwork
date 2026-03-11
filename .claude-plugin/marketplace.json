@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "groundwork",
+  "description": "Structured feature development workflow: ticket analysis, architecture planning, implementation pairing, and pre-PR review.",
+  "owner": {
+    "name": "Rick Copra"
+  },
+  "plugins": [
+    {
+      "name": "groundwork",
+      "description": "Structured feature development workflow: ticket analysis, architecture planning, implementation pairing, and pre-PR review.",
+      "version": "1.0.0",
+      "source": "./",
+      "author": {
+        "name": "Rick Copra"
+      }
+    }
+  ]
+}
