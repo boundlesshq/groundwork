@@ -43,20 +43,13 @@ Do NOT dump all ACs at once. Take them one by one:
 
 2. **Surface what's missing or ambiguous about this specific AC.** Explain *why* it matters: "This AC says 'display filing columns' but doesn't specify sort behavior. That matters because it determines whether we need backend sorting support or just static display."
 
-3. **Use the AskUserQuestion tool to check understanding:**
+3. **Check understanding:** Ask the developer: "What's your read on this AC? Clear, questions, or doesn't match your understanding?"
 
-Output a blank line, then use AskUserQuestion with header "AC Review" and the question "What's your read on this AC?" with options:
-- **Clear — move on** (description: "This AC makes sense, no questions")
-- **I have questions** (description: "Something is unclear or I want to dig deeper")
-- **Doesn't match my understanding** (description: "I think this means something different")
+**If the developer has questions:** This is a learning opportunity. Dig into the "why" together. Don't give the answer — help them find it. "What specifically is unclear? Is it the scope of the filter, or how it connects to the existing table?" Let them explore, but don't let it turn into a lecture. When the question is answered, move on.
 
-The user can always select "Other" to type a free-form response — that's built into the tool automatically.
+**If it doesn't match their understanding:** Ask what their understanding is. Compare it against the ticket text and comments. Resolve the mismatch — maybe the ticket is wrong, maybe there's missing context.
 
-**If the developer picks "I have questions":** This is a learning opportunity. Dig into the "why" together. Don't give the answer — help them find it. "What specifically is unclear? Is it the scope of the filter, or how it connects to the existing table?" Let them explore, but don't let it turn into a lecture. When the question is answered, move on.
-
-**If the developer picks "Doesn't match my understanding":** Ask what their understanding is. Compare it against the ticket text and comments. Resolve the mismatch — maybe the ticket is wrong, maybe there's missing context.
-
-**If the developer picks "Clear — move on":** Move to the next AC. No filler.
+**If it's clear:** Move to the next AC. No filler.
 
 ### Step 4: Surface Gaps
 
@@ -76,10 +69,7 @@ Incrementally built from the walkthrough — not generated fresh at the end. Two
 - **Clear** — Requirements you both understand and agree on (built from each "move on" response)
 - **Needs Answers** — Questions that would block or significantly change implementation
 
-Present the final checklist. Output a blank line, then use AskUserQuestion with header "Next Step" and the question "Ready to move to architecture?" with options:
-- **Plan the architecture** (description: "Requirements are clear, let's design the solution")
-- **Revisit something** (description: "I want to go back to an AC or gap we discussed")
-- **Pause here** (description: "I need to check with someone first")
+Present the final checklist, then ask: "Ready to move to architecture, or do you want to revisit something first?"
 
 ## How to Conduct the Conversation
 
