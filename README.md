@@ -37,7 +37,7 @@ I was hitting a wall where I'd want to do a codebase exploration for a ticket, a
 
 ### Inspiration
 
-I took inspiration from the very cool, very popular [superpowers](https://github.com/NickBaynham/superpowers) skill. Basically, superpowers does a proper brainstorm session with you, and has an interactive session where you decide on implementation, architecture, etc. Then it hands that plan off to a plan writer, and then it orchestrates a group of sub-agents who go work on the feature using TDD.
+I took inspiration from the very cool, very popular [superpowers](https://github.com/obra/superpowers) skill. Basically, superpowers does a proper brainstorm session with you, and has an interactive session where you decide on implementation, architecture, etc. Then it hands that plan off to a plan writer, and then it orchestrates a group of sub-agents who go work on the feature using TDD.
 
 My favorite part was the brainstorming session -- but I wanted one that was more of a "let's think about this together" rather than one that put a bunch of ideas in my head before I had the chance to actually think the problem through myself.
 
